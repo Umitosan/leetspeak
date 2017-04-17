@@ -10,6 +10,6 @@ get('/') do
 end
 
 get('/1337sp34k') do
-  @input = params.fetch('input_string')
+  @input = params.fetch('input_string').leet
   erb(:result)
 end
